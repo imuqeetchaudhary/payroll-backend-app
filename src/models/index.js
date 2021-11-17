@@ -14,13 +14,16 @@ db.sequelize = dbClient;
 const department = require("./hr-department");
 const designation = require("./hr-designation");
 const shift = require("./hr-shift");
+const jobNature = require("./hr-job-nature");
 
 const Department = department.init(dbClient, DataTypes);
 const Designation = designation.init(dbClient, DataTypes);
 const Shift = shift.init(dbClient, DataTypes);
+const JobNature = jobNature.init(dbClient, DataTypes);
 
 db.Department = Department;
 db.Designation = Designation;
 db.Shift = Shift;
+db.JobNature = JobNature;
 
 module.exports = db;

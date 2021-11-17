@@ -72,7 +72,7 @@
 
 - designation/delete/:id: :delete :protected
 
-## Routes for shift
+## Routes for Shift
 
 ### to create a shift
 
@@ -105,3 +105,37 @@
 ## to delete a single shift
 
 - shift/delete/:id: :delete :protected
+
+## Routes for Job
+
+### to create a job
+
+- job/create :post :protected
+
+```js
+{
+    jobname: String(*),
+}
+```
+
+## to get all jobs
+
+- job/get-all :get :protected
+
+## to get a single job
+
+- job/get/:id: :get :protected
+
+### to update a job
+
+- job/update/:id: :patch :protected
+
+```js
+{
+    jobname: String,
+}
+```
+
+## to delete a single job
+
+- job/delete/:id: :delete :protected

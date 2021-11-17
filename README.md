@@ -25,7 +25,7 @@
 
 ### to update a department
 
-- department/update/:id :patch :protected
+- department/update/:id: :patch :protected
 
 ```js
 {

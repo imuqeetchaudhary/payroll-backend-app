@@ -12,9 +12,12 @@ const db = {};
 db.sequelize = dbClient;
 
 const department = require("./hr-department");
+const designation = require("./hr-designation");
 
 const Department = department.init(dbClient, DataTypes);
+const Designation = designation.init(dbClient, DataTypes);
 
 db.Department = Department;
+db.Designation = Designation;
 
 module.exports = db;

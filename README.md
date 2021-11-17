@@ -37,3 +37,37 @@
 ## to delete a single department
 
 - department/delete/:id: :delete :protected
+
+## Routes for Designation
+
+### to create a designation
+
+- designation/create :post :protected
+
+```js
+{
+    designame: String(*),
+}
+```
+
+## to get all designations
+
+- designation/get-all :get :protected
+
+## to get a single designation
+
+- designation/get/:id: :get :protected
+
+### to update a designation
+
+- designation/update/:id: :patch :protected
+
+```js
+{
+    designame: String,
+}
+```
+
+## to delete a single designation
+
+- designation/delete/:id: :delete :protected

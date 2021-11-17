@@ -71,3 +71,37 @@
 ## to delete a single designation
 
 - designation/delete/:id: :delete :protected
+
+## Routes for shift
+
+### to create a shift
+
+- shift/create :post :protected
+
+```js
+{
+    shiftname: String(*),
+}
+```
+
+## to get all shifts
+
+- shift/get-all :get :protected
+
+## to get a single shift
+
+- shift/get/:id: :get :protected
+
+### to update a shift
+
+- shift/update/:id: :patch :protected
+
+```js
+{
+    shiftname: String,
+}
+```
+
+## to delete a single shift
+
+- shift/delete/:id: :delete :protected

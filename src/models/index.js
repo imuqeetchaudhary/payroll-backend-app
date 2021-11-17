@@ -11,4 +11,10 @@ const dbClient = getDbClient();
 const db = {};
 db.sequelize = dbClient;
 
+const department = require("./hr-department");
+
+const Department = department.init(dbClient, DataTypes);
+
+db.Department = Department;
+
 module.exports = db;
